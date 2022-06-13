@@ -1,13 +1,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
-:root{
-    --color-bg:#E5E5E5;
-    --color-primary:#333333;
-    --color-secondary:#676767;
-    --color-red:#D6001C;
+:root {
+    --color-bg: #E5E5E5;
+    --color-primary: #333333;
+    --color-secondary: #676767;
+    --color-red: #D6001C;
 }
-*{
+
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 42px;
+}
+
+.logo-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 35px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27px;
+}
+
+.nav-items li {
+    list-style: none;
+}
+
+.nav-items li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+.resume-btn {
+    width: 178px;
+    height: 41px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+}
+
+.resume-btn a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.signin-btn {
+    width: 115px;
+    height: 41px;
+    background-color: var(--color-red);
+    border-radius: 30px;
+    border: none;
+    transition: all .3s ease-in;
+}
+
+.signin-btn:hover {
+    background-color: #ee4e63;
+}
+
+.signin-btn a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-bg);
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 80px;
+    gap: 15px;
+}
+
+.hero-text-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.hero-text-content p {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-secondary);
+}
+
+.hero-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.search-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid var(--color-primary);
+    width: 328px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+#search {
+    border: none;
+    width: 260px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: var(--color-secondary);
+    outline: none;
+    border-radius: 30px;
+}
+
+.icon {
+    width: 20.36px;
+    height: 16px;
+    transform: rotate(90deg);
+}
+
+.search-btn {
+    width: 162px;
+    height: 50px;
+    background-color: var(--color-red);
+    border-radius: 30px;
+    border: none;
+    transition: all .3s ease-in;
+}
+
+.search-btn:hover {
+    background-color: #ee4e63;
+}
+
+.search-btn a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-bg);
+}
+
+.tile {
+    /* padding: 70px; */
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(3, 180px);
+    gap: 0;
+}
+
+.tile img {
+    border-radius: 50%;
+    width: 170px;
+}
+.tile-1{
+    width: 180px; 
+    height: 180px;
+    background-color: var(--color-bg); 
+    border-top-left-radius: 100%;
+}
+.tile-2{
+    width: 180px; 
+    height: 180px;
+    background-color: var(--color-primary); 
+    border-bottom-right-radius: 100%; 
+}
+.tile-4{
+    width: 180px; 
+    height: 180px;
+    border-bottom-left-radius: 100%;
+    background-color: var(--color-red); 
+}
+.tile-6{
+    width: 180px; 
+    height: 360px;
+    background-color: var(--color-red); 
+    border-top-left-radius: 180px;
+    border-bottom-left-radius: 180px;
+    grid-row: span 2; 
+}
+.tile-7{
+    width: 180px; 
+    height: 180px;
+    border-bottom-left-radius: 100%;
+    background-color: var(--color-primary);
+}
+.tile-8{
+    width: 180px; 
+    height: 180px;
+    background-color: var(--color-bg); 
+    border-top-left-radius: 100%;    
+}
+.tile-9{
+    width: 180px; 
+    height: 180px;
+    background-color: var(--color-primary); 
+    border-top-left-radius: 100%;    
+}
+.tile-11{
+    width: 180px; 
+    height: 180px;
+    border-bottom-left-radius: 100%;
+    background-color: var(--color-red);   
 }
