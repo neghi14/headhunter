@@ -246,6 +246,9 @@ body {
 .mobile-nav {
     display: none;
 }
+input[type="search"]::-webkit-search-decoration{
+    display: none;
+}
 
 @media(max-width:48rem) {
     .nav-bar {
